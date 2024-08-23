@@ -485,26 +485,36 @@ footer p {
         max-width: 350px;
     }
 }
-/* loader */
-
-.loader {
+   /* Loader */
+   .loader {
     border: 12px solid #f3f3f3; /* Light grey */
-    border-top: 12px solid #ff5722; /* Blue */
+    border-top: 12px solid #ff5722; /* Orange */
     border-radius: 50%;
     width: 80px;
     height: 80px;
     animation: spin 1s linear infinite;
-    margin: 0 auto; /* Center the loader */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
-  
-  
-  
+}
+
+/* White screen to cover the entire content */
+#white-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* White background */
+    z-index: 1000; /* Ensure it covers everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide the content initially */
+#content {
+    display: none;
+}
