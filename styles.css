@@ -518,3 +518,78 @@ footer p {
 #content {
     display: none;
 }
+
+
+/* Internship Section */
+#internship {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+#internship .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#internship h2 {
+    font-size: 36px;
+    color: #f07109;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+.internship-domains {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.internship-domains .domain {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.internship-domains .domain:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.internship-domains .domain img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.internship-domains .domain h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.internship-domains .domain p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .internship-domains {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .internship-domains .domain {
+        max-width: 90%;
+    }
+}
